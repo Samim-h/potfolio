@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+		<head><title>event javascript</title></head>
+
+<body>
+	<div id="demo">
+			<select id="countries">
+			<option value="">select countries</option>
+			<option value="1">Bangladesh</option>
+			<option value="2">PAK</option>
+			<option value="3">USA</option>
+			<option value="4">INDIA</option>
+			<option value="5">UK</option>
+			
+			</select>
+	</div>
+	<div id="selecteNumber">
+	<h1></h1>
+	</div>
+	
+	
+<script>
+	var x =document.querySelector("#countries").value;
+	
+	document.querySelector("#countries").addEventListener("change",function(){
+	var selectedNumber=this.value;
+	if(selectedNumber==1){
+	document.querySelector("#selecteNumber").innerHTML='<select id=""><option value="">Dhaka</option>Gazipur<option value="">Kishogong</option><option value="">comilla</option><option value="">Dinachpur</option></select>'
+	
+	}else if (selectedNumber==2){
+	alert("you have selected USA");
+	}
+	});
+	 
+	
+	
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
